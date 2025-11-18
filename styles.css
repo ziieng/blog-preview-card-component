@@ -40,7 +40,7 @@ main {
   border: 1.5px solid black;
   border-radius: 15px;
   box-shadow: 10px 10px 0px black;
-  max-width: 300px;
+  max-width: 375px;
   padding: 20px;
   height: fit-content;
   margin-top: auto;
@@ -98,6 +98,7 @@ main {
   vertical-align: middle;
   font-weight: 800;
   font-size: 0.9rem;
+  font-style: normal;
 }
 
 .author-info img {
