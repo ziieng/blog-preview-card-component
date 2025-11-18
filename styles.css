@@ -1,0 +1,118 @@
+:root {
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-gray-500: hsl(0, 0%, 42%);
+  --color-gray-950: hsl(0, 0%, 7%);
+  --color-attribution-links: hsl(228, 45%, 44%);
+}
+
+@font-face {
+  font-family: Figtree; /* set name */
+  src: url(assets/fonts/Figtree-VariableFont_wght.ttf); /* url of the font */
+  font-style: normal; /* normal style */
+}
+
+@font-face {
+  font-family: Figtree; /* set name */
+  src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf); /* url of the font */
+  font-style: italic; /* italic style */
+}
+
+body {
+  background-color: var(--color-yellow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Figtree', sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border: 1.5px solid black;
+  border-radius: 15px;
+  box-shadow: 10px 10px 0px black;
+  max-width: 300px;
+  padding: 20px;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  display:flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card h1 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--color-gray-950);
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.card h1:hover, .card h1:focus {
+  color: var(--color-yellow);
+  cursor: pointer;
+}
+
+.card p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--color-gray-500);
+  line-height: 1.5;
+}
+
+.card > .subject-tag {
+  background-color: var(--color-yellow);
+  padding: 5px 15px;
+  border-radius: 5px;
+  box-sizing: content-box;
+  font-weight: 800;
+  font-size: 0.9rem;
+  width: fit-content;
+}
+
+.card > .blog-date {
+  font-size: 0.9rem;
+  color: var(--color-gray-950);
+  margin-top: 15px;
+  margin-bottom: 0px;
+  font-weight: 500;
+}
+
+.author-info {
+  display: inline;
+  vertical-align: middle;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.author-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-bottom: 0px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center; 
+  padding: 20px 0;
+  width: 100%;}
+  
+.attribution a { color: var(--color-attribution-links); }
